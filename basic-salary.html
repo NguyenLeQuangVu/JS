@@ -1,0 +1,298 @@
+<html>
+    <head>
+        <title>Our FE01 Company's Basic Salary</title>
+        <style>
+            #container{
+                width: 750px;
+            }
+            #header{
+                height: 165px;
+                background-image: url("anhnendep.jpg");
+                background-size: 100% 99%;
+                font-size: 28px;
+                color: rgb(235, 225, 219);
+                padding-top: 10px;
+                text-align: center;
+                font-weight: 700;
+            }
+            #content-salary1{
+                display: flex;
+                height: 200px;
+            }
+            #salary1--left{
+                width: 50%;
+            }
+            .img-salary{
+                height: 185px;
+                background-image: url("salary-table.png");
+                background-size: 100% 100%;
+                border: 5px solid rgb(14, 23, 107);
+            }
+            #salary1--left{
+                font-size: 40px;
+                color:rgb(14, 23, 107);
+                background-color: pink;
+                text-align: center;
+                padding-top: 20px;
+                border: 2px solid rgb(14, 23, 107);
+                background-image: url("money@@.jpg");
+                background-size: 100% 100%;
+
+            }
+            .middle-note{
+                height: 150px;
+                border: 5px solid rgb(14, 23, 107);
+                border-bottom: 3px solid rgb(14, 23, 107);
+                border-top: unset;
+            }
+            #salary2--right{
+                width: 50%;
+                font-size: 40px;
+                color:rgb(14, 23, 107);
+                background-color: pink;
+                text-align: center;
+                padding-top: 20px;
+                border: 2px solid rgb(14, 23, 107);
+                border-left: none;
+                text-decoration-line: underline;
+                background-image: url("money@@@.jpg");
+                background-size: 100% 100%;
+            }
+            #exercise2-a{
+                width : 1150px;
+                height: 155px;
+                background:rgb(14, 23, 107);
+                color: white;
+                font-size: 30px;
+                line-height: 50px;
+                padding-left: 16px;
+            }
+            #exercise2-b{
+                width : 1150px;
+                height: 155px;
+                background:rgb(14, 23, 107);
+                color: white;
+                font-size: 30px;
+                line-height: 50px;
+                padding-left: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <div style="text-decoration-line: underline; text-shadow: 7px 2px 9px #988fe9;">FE01 TECHNOLOGY COMPANY's SALARY CHECKBOX</div>
+                <div style="font-size: 20px; text-align: start; margin: 15px 0px 0px 10px; font-weight: 1000; line-height: 30px; color: rgb(145, 153, 228);"> <bold style="color: white;">Click On</bold> <bold style="color: rgb(15, 206, 206);">INCOME CHECKBOX</bold><br>Enter the necessary information for<br> automatically checking your <bold style="color: rgb(15, 206, 206);">INCOME</bold> <br>according to our company regulations based on the below table: </div>
+            </div>
+            <div class="img-salary"></div>
+            <div class="middle-note" style="color: rgb(14, 23, 107); font-weight: 600; line-height: 21px;">If your level is Senior, furthermore, you also work at Teamlead this Position and : <br> - Working Time《 3 years your Salary will increase by 500.000 VND <br> -  Working Time  》3 years Salary increase by 2.000.000 VND <br> -  Working Time  》5 years Salary increase by 5.000.000 VND <br> -  Working Time  》8 years Salary increase by 10.000.000 VND <br> ❀ And in case of working at PM Position, and then your Working Time more than 3 years, Your Salary will increase by 5%, And if it more than 8 years, Your Salary will increase by 6%.</div>
+            <div id="content-salary1">
+                <div id="salary1--left">❀CHECKING YOUR INCOME, HERE!❀ ◕ ‿ ◕ </div>
+                <div id="salary2--right">YOUR MONTHLY INCOME</div>
+            </div>
+            <br><br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr style="width: 1165px;">
+            <h1>Exercise2</h1>
+            <br>
+            <h2>[A]</h2>
+            <p style="color:rgb(14, 23, 107); font-size: 25px; font-weight: 700; font-style: oblique;">Let you click on the blue cell to see the <bold style="color:rgb(114, 5, 216); font-size: 28px; font-weight: 700">Magic</bold>!</p>
+            <div id="exercise2-a"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr style="width: 1165px;">
+            <br>
+            <br>
+            <br>
+            <h2>[B]</h2>
+            <p style="color:rgb(14, 23, 107); font-size: 25px; font-weight: 700; font-style: oblique;">Let you click on the blue cell to see the <bold style="color:rgb(114, 5, 216); font-size: 28px; font-weight: 700">Magic</bold>!</p>
+            <div id="exercise2-b"></div>
+        </div>
+        <script>
+            "use strict";
+            let $user_name;
+            document.getElementById("salary1--left").onclick = () =>{
+                $user_name = prompt("Your Name, Sir!");
+                let user_name = "";
+                do {
+                    if ($user_name == "vũ cơ" || $user_name == "vu co" || $user_name == "vũ đại" || $user_name == "vu dai" || $user_name == "vũ đệ" || $user_name == "vu de" || $user_name == "vu gay" || $user_name == "vũ gay" || $user_name.length === 0 || parseInt($user_name) % 1 === 0){
+                        alert("Don't JOKE Me, Sir! This is not a valid name or you did NOT give information. One more time! Your Name, Please!")
+                        $user_name = prompt("Your Name, Sir!");
+                    } else {
+                        alert("Your name is " + $user_name + " ,Right? 👍");
+                    }
+                } while ($user_name == "vũ cơ" || $user_name == "vu co" || $user_name == "vũ đại" || $user_name == "vu dai" || $user_name == "vũ đệ" || $user_name == "vu de" || $user_name == "vu gay" || $user_name == "vũ gay" || $user_name.length === 0 || parseInt($user_name) % 1 === 0 );
+                console.log($user_name)
+                const $validLevel =["fresher", "Fresher", "junior", "Junior", "middle", "Middle", "senior", "Senior"];
+                let $level = "";
+                do {
+                    $level = prompt("What is your level of programming? (Fresher, Junior, Middle, Senior)")
+                    if ($level == "fresher" || $level == "Fresher" || $level == "Junior" || $level == "junior" || $level == "Middle" || $level == "middle" || $level == "senior" || $level == "Senior" && $level.length !== 0 && parseInt($level) % 1 !== 0 ){
+                        break;
+                    } else {
+                        alert("Are you kidding me, Sir! This is not a valid level you are 😓 or you did NOT give information 😓. Please try again!");
+                        $level = prompt("What is your level of programming? ☛ (Fresher, Junior, Middle, Senior) ☚ ");
+                    }
+                } while ( $validLevel.includes($level) == false );
+                console.log($level);
+                alert("Okey, Your level is " + $level + "✍");
+                let $position = "";
+                const $validPosition = ["member", "Member", "trainer", "Trainer", "team lead", "Team lead", "PM", "pm", "Pm"];
+                do {
+                    $position = prompt(" Which is your position in the company? (Member, Trainer, Team lead, PM)")
+                    if ($position === "member" || $position === "Member" || $position === "trainer" || $position === "Trainer" || $position === "Team lead" || $position === "team lead" || $position === "pm" || $position === "PM" || $position === "Pm" && $position.length !== 0 && parseInt($position) % 1 !== 0){
+                        break;
+                    } else {
+                        alert("In the name of MAGIC, I'm willing to send you to UKRAINA 😈. Now, try it again!");
+                        $position = prompt("What is your level of programming? ☛ (Fresher, Junior, Middle, Senior)☚ ");
+                    }
+                } while ( $validPosition.includes($position) == false );
+                console.log($position);
+                alert("Ok! Your Position is " + $position + " ✍");
+                let $working_time = -1;
+                do {
+                    $working_time = prompt("How long have you worked at this position? (We get information by year) ");
+                } while ( 0 > $working_time && $working_time > 15 && $working_time =="" )
+                console.log($working_time);
+                let salary = 0;
+                switch (true) {
+                    case $level === "fresher" :
+                        salary += 8000000;
+                        break;
+                    case $level === "Fresher":
+                        salary += 8000000;
+                        break;
+                    case $level === "Junior":
+                        salary += 10000000;
+                        break;
+                    case $level === "junior":
+                        salary += 10000000;
+                        break;
+                    case $level === "middle":
+                        salary += 15000000;
+                        break;
+                    case $level === "Middle":
+                        salary += 15000000;
+                        break;
+                    case $level === "senior":
+                        salary += 20000000;
+                        break;
+                    case $level === "Senior":
+                        salary += 20000000;
+                        break;
+                };
+                switch (true) {
+                    case $position === "member" || $position === "Member" :
+                        salary += 0;
+                        break;
+                    case $position === "trainer" || $position === "Trainer" :
+                        salary += 1000000;
+                        break;
+                    case $position === "Team lead" || $position === "team lead" :
+                        salary += 3000000;
+                        break;
+                    case $position === "pm" || $position === "PM" || $position === "Pm":
+                        salary += 8000000;
+                        break;
+                };
+                switch (true) {
+                    case $working_time < 3 :
+                        salary += 0;
+                        break;
+                    case $working_time >= 3 && $working_time < 5 :
+                        salary += 500000;
+                        break;
+                    case $working_time >= 5 && $working_time < 8 :
+                        salary += 2000000;
+                        break;
+                    case $working_time >= 8 && $working_time < 10 :
+                        salary += 4000000;
+                        break;
+                };
+                switch (true) {
+                    case $level === "senior" && salary == 23500000 && $working_time > 3: 
+                        salary += 2000000;
+                        break;
+                    case $level === "senior" && salary == 23000000 : 
+                        salary += 500000;
+                        break;
+                    case $level === "senior" && salary == 25000000 && $working_time > 5: 
+                        salary += 5000000;
+                        break;
+                    case $level === "senior" && salary == 28000000 && $working_time > 8: 
+                        salary += 10000000;
+                        break;
+                };
+                switch (true) {
+                    case $level === "Senior" && salary == 23500000 && $working_time > 3: 
+                        salary += 2000000;
+                        break;
+                    case $level === "Senior" && salary == 23000000 : 
+                        salary += 500000;
+                        break;
+                    case $level === "Senior" && salary == 25000000 && $working_time > 5: 
+                        salary += 5000000;
+                        break;
+                    case $level === "Senior" && salary == 28000000 && $working_time > 8: 
+                        salary += 10000000;
+                        break;
+                };
+                switch (true) {
+                    case $position === "pm" && $working_time > 5 && $working_time <= 8: 
+                        salary = salary + salary * 5 / 100;
+                        break;
+                    case $position === "Pm" && $working_time > 5 && $working_time <= 8: 
+                        salary = salary + salary * 5 / 100;
+                        break;
+                    case $position === "PM" && $working_time > 5 && $working_time <= 8: 
+                        salary = salary + salary * 5 / 100;
+                        break;
+                    case $position === "pm" && $working_time > 8: 
+                        salary = salary + salary * 6 / 100;
+                        break;
+                    case $position === "Pm" && $working_time > 8: 
+                        salary = salary + salary * 6 / 100;
+                        break;
+                    case $position === "PM" && $working_time > 8: 
+                        salary = salary + salary * 6 / 100;
+                        break;
+                };
+                console.log(salary);
+                alert("Your Monthly Income Is " + salary + " VND" + " ✌  If i were you, i would be very happy! ✌ ");
+                document.getElementById("salary1--left").innerText = "DEAR "+ $user_name +"!" + " YOUR INCOME is";
+                document.getElementById("salary2--right").innerText =  salary + " VND";
+            }
+            document.getElementById("exercise2-a").onclick = () =>{
+            let number1 = 0;
+            let numberList = [];
+            do{
+                number1 += 1 ;
+                if ( number1 % 4 === 0 && number1 % 8 !== 0 ) {
+                    console.log(number1);
+                    numberList.push(number1);
+                } 
+            } while (number1 < 200)
+            document.getElementById("exercise2-a").innerText = "This is The sequence of numbers that are divisible by 4 But not divisible by 8 and less than 200. I only use JavaScript for doing it! Press F12 to keep me from kicking out of our room! " + numberList;
+            }
+            document.getElementById("exercise2-b").onclick = () =>{
+                var Arr = [2,3, 5, 6, 3, 6, 8, 7, 3, 1, 2, 5, 7, 8, 4];
+                for (var i = 1; i < Arr.length; i++)
+                for (var j = 0; j < i; j++)
+                if (Arr[i] > Arr[j]) {
+                    var x = Arr[i];
+                    Arr[i] = Arr[j];
+                    Arr[j] = x;
+                }
+                console.log(Arr);
+                document.getElementById("exercise2-b").innerText = Arr + ". This is the result of Sorting the sequence of random numbers given by my teacher [2,3, 5, 6, 3, 6, 8, 7, 3, 1, 2, 5, 7, 8, 4] . In order from high value to low value and prohibited from using Sort Function. F12! ";
+            }
+        </script>
+    </body>
+</html>
