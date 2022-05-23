@@ -290,8 +290,16 @@
                     Arr[i] = Arr[j];
                     Arr[j] = x;
                 }
+                function sumArray(Arr){
+                    let sum = 0;
+                    for (let t = 0; t < Arr.length; t++){
+                        sum += Arr[t];
+                    }
+                    return sum;
+                }
                 console.log(Arr);
-                document.getElementById("exercise2-b").innerText = Arr + ". This is the result of Sorting the sequence of random numbers given by my teacher [2,3, 5, 6, 3, 6, 8, 7, 3, 1, 2, 5, 7, 8, 4] . In order from high value to low value and prohibited from using Sort Function. F12! ";
+                console.log(sumArray(Arr));
+                document.getElementById("exercise2-b").innerText = Arr + ". This is the result of Sorting the sequence of random numbers given by my teacher [2,3, 5, 6, 3, 6, 8, 7, 3, 1, 2, 5, 7, 8, 4] . In order from high value to low value and prohibited from using Sort Function. And the total value of the sequences is " + sumArray(Arr) + ".";
             }
         </script>
     </body>
