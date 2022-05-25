@@ -282,24 +282,37 @@
             document.getElementById("exercise2-a").innerText = "This is The sequence of numbers that are divisible by 4 But not divisible by 8 and less than 200. I only use JavaScript for doing it! Press F12 to keep me from kicking out of our room! " + numberList;
             }
             document.getElementById("exercise2-b").onclick = () =>{
-                var Arr = [2,3, 5, 6, 3, 6, 8, 7, 3, 1, 2, 5, 7, 8, 4];
-                for (var i = 1; i < Arr.length; i++)
-                for (var j = 0; j < i; j++)
-                if (Arr[i] > Arr[j]) {
-                    var x = Arr[i];
-                    Arr[i] = Arr[j];
-                    Arr[j] = x;
-                }
-                function sumArray(Arr){
-                    let sum = 0;
-                    for (let t = 0; t < Arr.length; t++){
-                        sum += Arr[t];
+                var arr =[2,3, 5, 6, 3, 6, 8, 7, 3, 1, 2, 5, 7, 8, 4];
+                let p = 0;
+                let e = p + 1;
+                let g = 0;
+                do{p += 1;
+                let ha = arr[p];
+                let he = arr[e];
+                var q = 0;
+                    if((ha > he) && (ha > g)){
+                        g = ha
+                    } else if ((ha <  he) && (he>g)){
+                        g = he
                     }
-                    return sum;
-                }
-                console.log(Arr);
-                console.log(sumArray(Arr));
-                document.getElementById("exercise2-b").innerText = Arr + ". This is the result of Sorting the sequence of random numbers given by my teacher [2,3, 5, 6, 3, 6, 8, 7, 3, 1, 2, 5, 7, 8, 4] . In order from high value to low value and prohibited from using Sort Function. And the total value of the sequences is " + sumArray(Arr) + ".";
+                    } while (p < arr.length)
+                let a = g;
+                let m = 0;
+                var c =[];
+                        do {
+                            if(arr.includes(a)){
+                                let z = arr.filter(item => item !== a);
+                                if(arr.length > z.length == true ){
+                                    let i = arr.length - z.length;
+                                    do{ m = m + a;
+                                        c.push(a);
+                                        i = i - 1;
+                                    } while (i > 0)
+                                }
+                            }
+                            a = a - 1;
+                                } while ( a > 0 )
+                document.getElementById("exercise2-b").innerText = c + ". This is the result of Sorting the sequence of random numbers given by my teacher [2,3, 5, 6, 3, 6, 8, 7, 3, 1, 2, 5, 7, 8, 4] . In order from high value to low value and prohibited from using Sort Function. And the total value of the sequences is " + m + ".";
             }
         </script>
     </body>
